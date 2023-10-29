@@ -1,20 +1,9 @@
 export interface CharacterEntityApi {
   id: string;
-  species: string;
   name: string;
   status: string;
-  type: string;
   gender: string;
-  origin: {
-    name: string;
-    url: string
-  };
-  location: {
-    name: string;
-    url: string
-  };
+  bestSentences: [],
+  origin: string;
   image: string;
-  episode: string[];
-  url: string;
-  created: string;
 }

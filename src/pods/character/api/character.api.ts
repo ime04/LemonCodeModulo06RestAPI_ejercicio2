@@ -12,5 +12,15 @@ export const getCharacter = async (id: string): Promise<Character> => {
 };
 
 export const saveCharacter = async (character: Character): Promise<boolean> => {
+  if (character.id) {
+    //editar
+  } else {
+    //crear uno nuevo
+    axios.post('api/characters', character).then(function (response) {
+      console.log('entra')
+    }).catch(function (error) {
+      console.log(error);
+    })
+  }
   return true;
 };

@@ -4,14 +4,16 @@ export interface Character {
   name: string;
   status: string;
   gender: string;
+  bestSentences: [],
   origin: string;
 }
 
 export const createEmptyCharacter = (): Character => ({
   id: '',
   name: '',
-  image: '',
+  image: 'https://rickandmortyapi.com/api/character/avatar/442.jpeg',
   status: '',
   gender: '',
+  bestSentences: [],
   origin: '',
 });
