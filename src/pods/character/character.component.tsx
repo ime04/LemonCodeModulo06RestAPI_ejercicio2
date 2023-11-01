@@ -14,7 +14,6 @@ interface Props {
 
 export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
   const { character, onSave } = props;
-
   return (
     <Formik
       onSubmit={onSave}
@@ -29,6 +28,8 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
           <TextFieldComponent name="origin" label="Origin" />
           <TextFieldComponent name="gender" label="Gender" />
           <TextFieldComponent name="status" label="Status" />
+          <TextFieldComponent name="bestSentences[0]" label="Best Sentence 1" InputLabelProps={{ shrink: true }}/>
+          <TextFieldComponent name="bestSentences[1]" label="Best Sentence 2" InputLabelProps={{ shrink: true }}/>
           <Button type="submit" variant="contained" color="primary">
             Save
           </Button>

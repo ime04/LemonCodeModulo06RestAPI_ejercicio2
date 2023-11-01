@@ -181,13 +181,29 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
     },
     {
-      "id": "D2t1eIv",
-      "name": "Test",
+      "id": "FQ925TU",
+      "name": "Jerry Desnudo",
       "image": "https://rickandmortyapi.com/api/character/avatar/442.jpeg",
-      "status": "Test",
-      "gender": "Test",
-      "bestSentences": [],
-      "origin": "Test",
+      "status": "Alive",
+      "gender": "Male",
+      "bestSentences": [
+        null,
+        "Hola que ase 2"
+      ],
+      "origin": "La Tierra",
+      "thumbNailUrl": "/thumbnails/new-hotel.jpg"
+    },
+    {
+      "id": "EKNMpdm",
+      "name": "Jerry Desnudo Segunda",
+      "image": "https://rickandmortyapi.com/api/character/avatar/442.jpeg",
+      "status": "Alive",
+      "gender": "Male",
+      "bestSentences": [
+        "Eyyyy",
+        "Que pasa man"
+      ],
+      "origin": "Universo C-145",
       "thumbNailUrl": "/thumbnails/new-hotel.jpg"
     }
   ]

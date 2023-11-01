@@ -11,6 +11,12 @@ export const getCharacterCollection = async (): Promise<CharacterEntityApi[]> =>
   })
 };
 
-export const deleteCharacter = async (id: string): Promise<boolean> => {
-  return true;
+export const deleteCharacter = async (id: string) => {
+  axios.delete(`/api/characters/${id}`)
+  .then(function (response) {
+    alert('Character was deleted successfuly');
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
 };

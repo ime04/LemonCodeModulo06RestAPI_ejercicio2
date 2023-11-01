@@ -13,11 +13,14 @@ export const getCharacter = async (id: string): Promise<Character> => {
 
 export const saveCharacter = async (character: Character): Promise<boolean> => {
   if (character.id) {
-    //editar
+    axios.put(`api/characters/${character.id}`, character).then(function (response) {
+      alert('Character was updated successfuly');
+    }).catch(function (error) {
+      console.log(error);
+    })
   } else {
-    //crear uno nuevo
     axios.post('api/characters', character).then(function (response) {
-      console.log('entra')
+      alert('Character was added successfuly');
     }).catch(function (error) {
       console.log(error);
     })
